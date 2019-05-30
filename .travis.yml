@@ -9,11 +9,10 @@ install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo dpkg -i /tmp/hugo.deb                                                                                  ; fi
 
   - if [ "$TRAVIS_OS_NAME" = "windows" ]; then curl -L -o /tmp/hugo.zip https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Windows-64bit.zip; fi
-  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then cd /tmp/ && unzip hugo.zip                                                                                       ; fi
-  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then export PATH=$PATH:/tmp                                                                                           ; fi
-  - pwd
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then pushd /tmp; unzip hugo.zip; popd; export PATH=$PATH:/tmp; ls -l /tmp                                             ; fi
 
 script:
+  - echo $PATH
   - hugo # This commands builds your website on travis
 
 deploy:
