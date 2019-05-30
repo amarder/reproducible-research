@@ -12,8 +12,8 @@ install:
   - if [ "$TRAVIS_OS_NAME" = "windows" ]; then pushd /tmp; unzip hugo.zip; popd; export PATH=$PATH:/tmp; ls -l /tmp                                             ; fi
 
 script:
-  - echo $PATH
-  - hugo # This commands builds your website on travis
+  - hugo
+  - ls -l public/index.html # make sure there's a landing page
 
 deploy:
   provider: pages
