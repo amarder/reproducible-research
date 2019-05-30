@@ -1,8 +1,14 @@
 language: cpp
 
+os:
+  - linux
+  - windows
+
 install:
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Linux-64bit.deb
-  - sudo dpkg -i /tmp/hugo.deb
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Linux-64bit.deb; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo dpkg -i /tmp/hugo.deb                                                                                  ; fi
+  - echo "https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Windows-64bit.zip"
+  - ls -l /bin
 
 script:
   - hugo # This commands builds your website on travis
