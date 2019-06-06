@@ -236,7 +236,7 @@ This is how I organize the material for a talk: much like a
 I work on many different projects at the same time, and I'll
   come back to a project 6 months or a year later.
 
-  I don't want to spend much time figuring out where things are
+  I don't want to spend too much time figuring out where things are
   and how things were created: have a `Makefile`, and keep notes. But
   notes are not necessarily correct while a `Makefile` would be.
 
