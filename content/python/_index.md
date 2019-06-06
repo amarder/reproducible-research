@@ -3,7 +3,7 @@ title: Python
 weight: 130
 ---
 
-  I'm a big proponent of the use of multiple programming languages:
+  I'm a big proponent of the use of multiple programming languages-
   use different languages for different types of tasks.
 
   Statisticians, in particular, should be proficient in some
@@ -12,7 +12,7 @@ weight: 130
 
   I've long used Perl, but I've switched to Ruby, and I'm trying to
   also be proficient in Python. I prefer Ruby to Python, but Python is
-  much more widely used, and so if you're going to just learn one such
+  much more widely used.  So if you're going to just learn one such
   language, learn Python.
 
 
