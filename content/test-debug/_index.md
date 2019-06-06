@@ -41,6 +41,9 @@ tests so they can be re-run automatically."
 
  \lolit {\textendash} Hadley Wickham
 
+"Everything someone asks you to do once, they will ask you to do again."
+ \lolit {\textendash} Anonymous
+
 
 {\footnotesize
  [R Journal 3(1):5{\textendash](http://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf)10, 2011}
