@@ -19,7 +19,7 @@ weight: 100
   We at least want to fully document the process: we want capture the
   exact code and workflow, so the results can be reproduced on the
   same system.  And we want that code to be modular and readable, so
-  that it {\nhilit could be restructured for a different system, if
+  that it could be restructured for a different system, if
   necessary.
 
   I must admit that I don't always do this well. Part of this lecture
